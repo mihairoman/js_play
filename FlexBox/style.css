@@ -1,0 +1,156 @@
+/**
+    Default
+**/
+
+.parent {
+    border: 5px solid lightcoral;
+}
+
+.item {
+    /*height: 50px;*/
+    margin: 5px;
+    background: DeepSkyBlue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+
+/** Flex **/
+
+.example-flex .parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.example-flex .item {
+    width: 50px;
+}
+
+
+/** Flex Inline**/
+
+.example-flex-inline .parent {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.example-flex-inline .item {
+    width: 50px;
+}
+
+
+/** Flex Reverse **/
+
+.example-flex-reverse .parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.example-flex-reverse .item {
+    width: 50px;
+}
+
+
+/** Flex Justify **/
+
+.example-flex-justify .parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*justify-content: flex-start; default value*/
+    /*justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;*/
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.example-flex-justify .item {
+    width: 50px;
+}
+
+
+/**** flex Wrap
+    If children are larger than the parent,
+    the children are contained withing the parent's limits.
+****/
+
+.example-wrap .parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.example-wrap .item {
+    width: 30%;
+}
+
+
+/**** flex align
+    If children are larger than the parent,
+    the children are contained withing the parent's limits.
+****/
+
+.example-align .parent {
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.example-align .item {
+    width: 50px;
+}
+
+/**** flex align
+    If children are larger than the parent,
+    the children are contained withing the parent's limits.
+****/
+
+.example-align-content .parent {
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.example-align-content .item {
+    width: 20%;
+}
+
+/**** Flex align-self ****/
+
+
+.example-align-self .parent {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-align-self .item {
+  width: 50px;
+  height: 50px;
+}
+
+.example-align-self .item:nth-child(2) {
+  align-self: flex-end;
+}
